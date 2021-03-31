@@ -11,14 +11,14 @@ import (
 type ContentObj struct { //impl IObj
 	listCache listCacheContent
 	//text bytes.Buffer
-	getRoot func() *GoPdf
+	getRoot func() *GoPdf2
 }
 
 func (c *ContentObj) protection() *PDFProtection {
 	return c.getRoot().protection()
 }
 
-func (c *ContentObj) init(funcGetRoot func() *GoPdf) {
+func (c *ContentObj) init(funcGetRoot func() *GoPdf2) {
 	c.getRoot = funcGetRoot
 }
 

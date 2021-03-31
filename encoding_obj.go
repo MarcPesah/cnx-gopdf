@@ -9,7 +9,7 @@ type EncodingObj struct {
 	font IFont
 }
 
-func (e *EncodingObj) init(funcGetRoot func() *GoPdf) {
+func (e *EncodingObj) init(funcGetRoot func() *GoPdf2) {
 
 }
 func (e *EncodingObj) getType() string {

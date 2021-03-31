@@ -9,11 +9,11 @@ import (
 type SMask struct {
 	imgInfo
 	data []byte
-	//getRoot func() *GoPdf
+	//getRoot func() *GoPdf2
 	pdfProtection *PDFProtection
 }
 
-func (s *SMask) init(funcGetRoot func() *GoPdf) {
+func (s *SMask) init(funcGetRoot func() *GoPdf2) {
 	//s.getRoot = funcGetRoot
 }
 

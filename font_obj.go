@@ -20,7 +20,7 @@ type FontObj struct {
 	CountOfFont int
 }
 
-func (f *FontObj) init(funcGetRoot func() *GoPdf) {
+func (f *FontObj) init(funcGetRoot func() *GoPdf2) {
 	f.IsEmbedFont = false
 	//me.CountOfFont = -1
 }

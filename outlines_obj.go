@@ -7,7 +7,7 @@ import (
 
 //OutlinesObj : outlines dictionary
 type OutlinesObj struct { //impl IObj
-	getRoot func() *GoPdf
+	getRoot func() *GoPdf2
 
 	index   int
 	first   int
@@ -16,7 +16,7 @@ type OutlinesObj struct { //impl IObj
 	lastObj *OutlineObj
 }
 
-func (o *OutlinesObj) init(funcGetRoot func() *GoPdf) {
+func (o *OutlinesObj) init(funcGetRoot func() *GoPdf2) {
 	o.getRoot = funcGetRoot
 	o.first = -1
 	o.last = -1
@@ -66,7 +66,7 @@ type OutlineObj struct { //impl IObj
 	next   int
 }
 
-func (o *OutlineObj) init(funcGetRoot func() *GoPdf) {
+func (o *OutlineObj) init(funcGetRoot func() *GoPdf2) {
 }
 
 func (o *OutlineObj) getType() string {
@@ -75,7 +75,7 @@ func (o *OutlineObj) getType() string {
 
 func (o *OutlineObj) write(w io.Writer, objID int) error {
 	io.WriteString(w, "<<\n")
-	fmt.Fprintf(w, "  /Parent %d 0 R\n", o.parent + 1)
+	fmt.Fprintf(w, "  /Parent %d 0 R\n", o.parent+1)
 	if o.prev >= 0 {
 		fmt.Fprintf(w, "  /Prev %d 0 R\n", o.prev)
 	}

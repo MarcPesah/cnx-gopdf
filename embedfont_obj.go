@@ -11,10 +11,10 @@ type EmbedFontObj struct {
 	Data      string
 	zfontpath string
 	font      IFont
-	getRoot   func() *GoPdf
+	getRoot   func() *GoPdf2
 }
 
-func (e *EmbedFontObj) init(funcGetRoot func() *GoPdf) {
+func (e *EmbedFontObj) init(funcGetRoot func() *GoPdf2) {
 	e.getRoot = funcGetRoot
 }
 

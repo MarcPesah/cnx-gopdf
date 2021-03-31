@@ -12,10 +12,10 @@ type PageObj struct { //impl IObj
 	ResourcesRelate string
 	pageOption      PageOption
 	Links           []linkOption
-	getRoot         func() *GoPdf
+	getRoot         func() *GoPdf2
 }
 
-func (p *PageObj) init(funcGetRoot func() *GoPdf) {
+func (p *PageObj) init(funcGetRoot func() *GoPdf2) {
 	p.getRoot = funcGetRoot
 	p.Links = make([]linkOption, 0)
 }

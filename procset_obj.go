@@ -12,10 +12,10 @@ type ProcSetObj struct {
 	RelateXobjs         RelateXobjects
 	ExtGStates          []ExtGS
 	ImportedTemplateIds map[string]int
-	getRoot             func() *GoPdf
+	getRoot             func() *GoPdf2
 }
 
-func (pr *ProcSetObj) init(funcGetRoot func() *GoPdf) {
+func (pr *ProcSetObj) init(funcGetRoot func() *GoPdf2) {
 	pr.getRoot = funcGetRoot
 	pr.ImportedTemplateIds = make(map[string]int, 0)
 	pr.ExtGStates = make([]ExtGS, 0)

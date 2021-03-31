@@ -13,7 +13,7 @@ type ExtGStateObj struct {
 	BM string
 }
 
-func (egs *ExtGStateObj) init(func() *GoPdf) {}
+func (egs *ExtGStateObj) init(func() *GoPdf2) {}
 
 func (egs *ExtGStateObj) getType() string {
 	return "ExtGState"

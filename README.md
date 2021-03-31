@@ -26,7 +26,7 @@ gopdf is a simple library for generating PDF document written in Go lang.
 package main
 import (
 	"log"
-	"github.com/signintech/gopdf"
+	"github.com/MarcPesah/cnx-gopdf"
 )
 
 func main() {
@@ -59,7 +59,7 @@ func main() {
 package main
 import (
 	"log"
-	"github.com/signintech/gopdf"
+	"github.com/MarcPesah/cnx-gopdf"
 )
 
 func main() {
@@ -96,7 +96,7 @@ package main
 
 import (
 	"log"
-	"github.com/signintech/gopdf"
+	"github.com/MarcPesah/cnx-gopdf"
 )
 
 func main()  {

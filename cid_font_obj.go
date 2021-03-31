@@ -12,7 +12,7 @@ type CIDFontObj struct {
 	indexObjSubfontDescriptor int
 }
 
-func (ci *CIDFontObj) init(funcGetRoot func() *GoPdf) {
+func (ci *CIDFontObj) init(funcGetRoot func() *GoPdf2) {
 }
 
 //SetIndexObjSubfontDescriptor set  indexObjSubfontDescriptor

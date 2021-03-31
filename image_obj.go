@@ -28,7 +28,7 @@ type ImageObj struct {
 	//getRoot func() *GoPdf
 }
 
-func (i *ImageObj) init(funcGetRoot func() *GoPdf) {
+func (i *ImageObj) init(funcGetRoot func() *GoPdf2) {
 
 }
 
